@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import BottomNav from './BottomNav';
+import TopNav from './TopNav';
 import './SelectedPhotos.css';
 
 function SelectedPhotos() {
@@ -9,16 +10,11 @@ function SelectedPhotos() {
 
   return (
     <div className="selected-photos-container">
-      <div className="top-bar">
-            <div className="timeframe">
-              <h3>TimeFrame</h3>
-              <div className="date">March 23rd</div>
-            </div>
-            <div className="nav-buttons">
-              <button>Back</button>
-              <button>Save & Exit</button>
-            </div>
-          </div>
+
+      <TopNav 
+            title="TimeFrame" 
+            date="March 23rd"
+        />
 
       <h2 className="title">Selected</h2>
       <div className="image-gallery">

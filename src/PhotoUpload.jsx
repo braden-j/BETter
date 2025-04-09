@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import BottomNav from './BottomNav';
+import TopNav from './TopNav';
 import './PhotoUpload.css';
 
 import exampleImage1 from './assets/Screenshot 2025-04-07 092724.png';
@@ -33,17 +34,12 @@ function PhotoUpload() {
     return (
       <div className="photo-upload-container">
         <div className="content-area">
-          <div className="top-bar">
-            <div className="timeframe">
-              <h3>TimeFrame</h3>
-              <div className="date">March 23rd</div>
-            </div>
-            <div className="nav-buttons">
-              <button>Back</button>
-              <button>Save & Exit</button>
-            </div>
-          </div>
-  
+
+        <TopNav 
+            title="TimeFrame" 
+            date="March 23rd"
+        />
+
           <h2 className="title">Any photos to add?</h2>
           <div className="image-gallery">
             {images.map((image, index) => (
