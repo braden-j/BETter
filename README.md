@@ -12,4 +12,4 @@ To run the project:
 
 This project uses the following libraries, tools, and resources:
 
-- Used ChatGPT to generate starter code for building the pages which we then built on and modified (specifically help with things like spacing/setup in CSS)
+- Used ChatGPT to generate starter code for building the pages which we then built on and modified (specifically help with things like spacing/setup in CSS, maintaining/translating styling for new pages)
