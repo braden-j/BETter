@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import BottomNav from './BottomNav';
 import TopNav from './TopNav';
 import './SelectedPhotos.css';
@@ -7,6 +7,11 @@ import './SelectedPhotos.css';
 function SelectedPhotos() {
   const location = useLocation();
   const selectedImages = location.state?.selectedImages || [];
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate('/upload');
+  };
 
   return (
     <div className="selected-photos-container">
@@ -14,6 +19,7 @@ function SelectedPhotos() {
       <TopNav 
             title="TimeFrame" 
             date="March 23rd"
+            onBackClick={handleBack}
         />
 
       <h2 className="title">Selected</h2>
