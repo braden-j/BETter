@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import PhotoUpload from './PhotoUpload';
 import SelectedPhotos from './SelectedPhotos';
+import JournalUpload from './JournalUpload';
 import './App.css';
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
       <div className="app-container">
         <main className="app-main">
           <Routes>
-            <Route path="/upload" element={<PhotoUpload />} />
+            <Route path="/journal-upload" element={<JournalUpload />} />
+            <Route path="/photo-upload" element={<PhotoUpload />} />
             <Route path="/selected-photos" element={<SelectedPhotos />} />
           </Routes>
         </main>

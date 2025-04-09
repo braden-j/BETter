@@ -10,7 +10,7 @@ function SelectedPhotos() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate('/upload');
+    navigate('/photo-upload');
   };
 
   return (

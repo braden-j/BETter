@@ -33,6 +33,10 @@ function PhotoUpload() {
     const handleNext = () => {
       navigate('/selected-photos', { state: { selectedImages } });
     };
+
+    const handleBack = () => {
+      navigate('/journal-upload');
+    };
   
     return (
       <div className="photo-upload-container">
@@ -41,6 +45,7 @@ function PhotoUpload() {
         <TopNav 
             title="TimeFrame" 
             date="March 23rd"
+            onBackClick={handleBack}
         />
 
           <h2 className="title">Any photos to add?</h2>
@@ -66,7 +71,7 @@ function PhotoUpload() {
   
         <BottomNav 
           onNextClick={handleNext} 
-          nextLabel="Next"
+          nextLabel="Upload"
           showUtilityButtons={true}
         />
       </div>
