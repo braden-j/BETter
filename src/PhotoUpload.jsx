@@ -13,10 +13,13 @@ import exampleImage6 from './assets/Screenshot 2025-04-07 092844.png';
 import exampleImage7 from './assets/Screenshot 2025-04-09 143804.png';
 import exampleImage8 from './assets/Screenshot 2025-04-09 143830.png';
 import exampleImage9 from './assets/Screenshot 2025-04-09 143916.png';
+import exampleImage10 from './assets/Screenshot 2025-04-09 182810.png';
+import exampleImage11 from './assets/Screenshot 2025-04-09 182834.png';
+import exampleImage12 from './assets/Screenshot 2025-04-09 182852.png';
 
 function PhotoUpload() {
     const [selectedImages, setSelectedImages] = useState([]);
-    const images = [exampleImage1, exampleImage2, exampleImage3, exampleImage4, exampleImage5, exampleImage6, exampleImage7, exampleImage8, exampleImage9];
+    const images = [exampleImage1, exampleImage2, exampleImage3, exampleImage4, exampleImage5, exampleImage6, exampleImage7, exampleImage8, exampleImage9, exampleImage10, exampleImage11, exampleImage12];
     const navigate = useNavigate();
     
     const handleImageClick = (image) => {
