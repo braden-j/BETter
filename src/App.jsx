@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import PhotoUpload from './PhotoUpload';
+import SelectedPhotos from './SelectedPhotos';
 import './App.css';
 
 function App() {
@@ -9,8 +10,7 @@ function App() {
         <main className="app-main">
           <Routes>
             <Route path="/upload" element={<PhotoUpload />} />
-            {/* Proper redirect using Navigate component */}
-            <Route path="*" element={<Navigate to="/upload" replace />} />
+            <Route path="/selected-photos" element={<SelectedPhotos />} />
           </Routes>
         </main>
       </div>
