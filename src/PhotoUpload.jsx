@@ -8,6 +8,7 @@ import exampleImage6 from './assets/Screenshot 2025-04-07 092844.png';
 import exampleImage7 from './assets/Screenshot 2025-04-09 143804.png';
 import exampleImage8 from './assets/Screenshot 2025-04-09 143830.png';
 import exampleImage9 from './assets/Screenshot 2025-04-09 143916.png';
+import BottomNav from './BottomNav';
 import './PhotoUpload.css';
 
 function PhotoUpload() {
@@ -20,6 +21,10 @@ function PhotoUpload() {
       } else {
         setSelectedImages([...selectedImages, image]);
       }
+    };
+    
+    const handleNext = () => {
+      console.log('Next clicked with selected images:', selectedImages);
     };
   
     return (
@@ -58,13 +63,11 @@ function PhotoUpload() {
           </div>
         </div>
   
-        <div className="bottom-bar">
-          <div className="bottom-buttons">
-            <button aria-label="Gallery">📚</button>
-            <button aria-label="Edit">✏️</button>
-          </div>
-          <button className="next-btn">Next <span aria-hidden="true">➡️</span></button>
-        </div>
+        <BottomNav 
+          onNextClick={handleNext} 
+          nextLabel="Next"
+          showUtilityButtons={true}
+        />
       </div>
     );
   }
