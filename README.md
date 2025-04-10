@@ -2,7 +2,7 @@
 
 To run the project:
 
-1. Clone the repo in VS Code or another editor  
+1. Clone the repo in VS Code or another editor: 'git clone https://github.com/braden-j/BETter.git'
 2. Run `npm install` in the terminal  
 3. Run `npm run dev`. App should open on [http://localhost:3000/](http://localhost:3000/)
 
