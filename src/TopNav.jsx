@@ -22,7 +22,7 @@ function TopNav({ title, date, onBackClick, onSaveExitClick }) {
   };
 
   return (
-    <div className="top-bar">
+    <div className="top-nav">
       <div className="timeframe">
         <h3>{title}</h3>
         <div className="date">{date}</div>

@@ -1,4 +1,4 @@
-.bottom-bar {
+.bottom-nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -70,7 +70,7 @@
   
   /* Mobile-specific adjustments */
   @media (max-width: 480px) {
-    .bottom-bar {
+    .bottom-nav {
       padding: 0 0.8rem;
       height: 65px;
     }

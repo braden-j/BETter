@@ -7,7 +7,7 @@ import userIcon from './assets/UserIcon.png';
 
 function BottomNav({ onNextClick, nextLabel, showUtilityButtons = true }) {
   return (
-    <div className="bottom-bar">
+    <div className="bottom-nav">
       {showUtilityButtons && (
         <div className="bottom-buttons">
           <button> 

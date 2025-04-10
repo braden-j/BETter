@@ -10,6 +10,6 @@ To run the project:
 
 ## Attributions
 
-This project uses the following libraries, tools, and resources:
-
-- Used ChatGPT to generate starter code for building the pages which we then built on and modified (specifically help with things like spacing/setup in CSS, maintaining/translating styling for new pages, image selection UI)
+Utilized ChatGPT to:
+- Help to generate starter code for building the pages which we then built on and modified (specifically help with things like spacing/setup in CSS, maintaining/translating styling for new pages)
+- Help with image selection/grouping functionality and CSS

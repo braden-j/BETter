@@ -1,4 +1,4 @@
-.top-bar {
+.top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
     color: #eee7e3;
   }
   
-  .top-bar .date {
+  .top-nav .date {
     font-size: 1.1rem;
     font-weight: bold;
   }
