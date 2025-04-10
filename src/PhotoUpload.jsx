@@ -31,7 +31,7 @@ function PhotoUpload() {
     };
   
     const handleNext = () => {
-      navigate('/selected-photos', { state: { selectedImages } });
+      navigate('/group-photos', { state: { selectedImages } });
     };
 
     const handleBack = () => {
