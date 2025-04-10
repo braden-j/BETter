@@ -25,7 +25,7 @@ function BottomNav({ onNextClick, nextLabel, showUtilityButtons = true }) {
         className="next-btn" 
         onClick={onNextClick}
       >
-        {nextLabel || 'Next'} <span>➡️</span>
+        {nextLabel || 'Next'}
       </button>
     </div>
   );
