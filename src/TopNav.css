@@ -5,8 +5,9 @@
     width: 100%;
     padding: 10px 0;
     margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
-  
+
   .timeframe {
     display: flex;
     flex-direction: column;
@@ -15,13 +16,13 @@
   .timeframe h3 {
     margin: 0;
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: bold;
     color: #eee7e3;
   }
   
   .top-nav .date {
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: normal;
   }
   
   .nav-buttons {
@@ -38,5 +39,6 @@
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.2s ease;
+    font-family: 'Courgette', cursive;
   }
   
