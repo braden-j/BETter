@@ -35,7 +35,20 @@ function CaptionPhotos() {
   }, [currGroup, groups, allCaptions]);
 
   const handleBack = () => {
-    navigate('/group-photos');
+    const allPhotos = [];
+    
+    groups.forEach(group => {
+      group.photos.forEach(photo => {
+        allPhotos.push(photo.src);
+      });
+    });
+    
+    navigate('/group-photos', { 
+      state: { 
+        selectedImages: allPhotos,
+        photoGroups: groups 
+      } 
+    });
   };
 
   const handleCaptionChange = (e) => {
