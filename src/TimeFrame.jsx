@@ -21,6 +21,7 @@ function TimeFrame() {
     }
   }, [location.state, groups.length]);
 
+  // Send back to somewhere else or no where?
   const handleBack = () => {
     const allPhotos = [];
     

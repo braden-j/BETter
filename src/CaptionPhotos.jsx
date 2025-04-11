@@ -92,6 +92,11 @@ function CaptionPhotos() {
   };
   
   const finishCaptioning = (updatedGroups) => {
+    navigate('/generate', { 
+      state: { 
+        photoGroups: updatedGroups 
+      }
+    });
   };
   
   if (groups.length === 0) {
