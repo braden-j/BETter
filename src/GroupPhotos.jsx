@@ -99,7 +99,7 @@ function GroupPhotos() {
     
     const allGroups = [...groups, ...individualGroups];
     
-    navigate('/timeframe', { 
+    navigate('/caption-photos', { 
       state: { 
         photoGroups: allGroups
       } 
