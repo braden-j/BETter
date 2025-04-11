@@ -3,6 +3,7 @@ import PhotoUpload from './PhotoUpload';
 import GroupPhotos from './GroupPhotos';
 import CaptionPhotos from './CaptionPhotos';
 import JournalUpload from './JournalUpload';
+import TimeFrame from './TimeFrame';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="/photo-upload" element={<PhotoUpload />} />
             <Route path="/group-photos" element={<GroupPhotos />} />
             <Route path="/caption-photos" element={<CaptionPhotos />} />
+            <Route path="/timeframe" element={<TimeFrame />} />
           </Routes>
         </main>
       </div>

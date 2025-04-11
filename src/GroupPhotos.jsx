@@ -99,7 +99,7 @@ function GroupPhotos() {
     
     const allGroups = [...groups, ...individualGroups];
     
-    navigate('/caption-photos', { 
+    navigate('/timeframe', { 
       state: { 
         photoGroups: allGroups
       } 
@@ -115,7 +115,7 @@ function GroupPhotos() {
       />
 
       <div className="photos-header">
-        <h2 className="title">Group Your Photos</h2>
+        <h2 className="group-title">Group Your Photos</h2>
         
         {!isGrouping ? (
           <button 

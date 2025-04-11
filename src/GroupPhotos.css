@@ -16,10 +16,11 @@
   margin-bottom: 15px;
 }
 
-.title {
+.group-title {
   font-size: 1.5rem;
   font-weight: 600;
   color: #eee7e3;
+  text-align: center;
   margin: 0;
 }
 
