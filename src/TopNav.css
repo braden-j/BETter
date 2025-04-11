@@ -5,8 +5,9 @@
     width: 100%;
     padding: 10px 0;
     margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
-  
+
   .timeframe {
     display: flex;
     flex-direction: column;
