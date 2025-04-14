@@ -68,7 +68,6 @@ function TimeFrame() {
       
       <div className="timeframe-header">
         <h2 className="timeframe-title">Greece '25</h2>
-        <h3 className="subtitle">March 23rd</h3>
       </div>
       
       <div className="timeframe-content">
