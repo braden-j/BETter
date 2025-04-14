@@ -24,6 +24,10 @@ function GroupPhotos() {
   const handleBack = () => {
     navigate('/photo-upload');
   };
+
+  const handleSaveExit = () => {
+    navigate('/');
+  };
   
   const togglePhotoSelection = (photo) => {
     if (!isGrouping) return;
@@ -112,6 +116,7 @@ function GroupPhotos() {
         title="TimeFrame" 
         date="March 23rd"
         onBackClick={handleBack}
+        onSaveExitClick={handleSaveExit}
       />
 
       <div className="photos-header">

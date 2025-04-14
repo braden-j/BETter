@@ -29,6 +29,10 @@ function Generate() {
         });
     };
 
+    const handleSaveExit = () => {
+      navigate('/');
+    };
+
     const handleButtonClick = () => {
         navigate('/timeframe', { 
           state: { 
@@ -44,6 +48,7 @@ function Generate() {
             title="TimeFrame" 
             date="March 23rd"
             onBackClick={handleBack}
+            onSaveExitClick={handleSaveExit}
           />
   
           <h2 className="title">Generate TimeFrame?</h2>

@@ -37,6 +37,10 @@ function PhotoUpload() {
     const handleBack = () => {
       navigate('/journal-upload');
     };
+
+    const handleSaveExit = () => {
+      navigate('/');
+    };
   
     return (
       <div className="photo-upload-container">
@@ -46,6 +50,7 @@ function PhotoUpload() {
             title="TimeFrame" 
             date="March 23rd"
             onBackClick={handleBack}
+            onSaveExitClick={handleSaveExit}
         />
 
           <h2 className="title">Any photos to add?</h2>
